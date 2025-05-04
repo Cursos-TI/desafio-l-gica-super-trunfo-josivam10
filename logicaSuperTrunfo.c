@@ -7,6 +7,7 @@ int main(){
     float area, area1,densidadePOPU,densidadePOPU1;
     float pib, pib1,PIBpcarp, PIBpcarp1;
     int pontosT, pontosT1;
+    int opcaoJogo; 
 
     
     printf(" BEM VINDO AO JOGO \n");
@@ -64,14 +65,18 @@ int main(){
     printf("Area: %.2f \n",area);
     printf("PIB: %.2f bilhoes de reais \n",pib);
     printf("Numero de Pontos Turisticos: %d \n",pontosT);
-    if (PIBpcarp = pib / populacao){
+    if (PIBpcarp = pib / populacao){ 
 
     }
     printf("PIB per capita: %.2f \n",PIBpcarp);
     if (densidadePOPU = populacao / area){
-        
+
     }
     printf("Densidade Populacional: %.2f \n",densidadePOPU);
+
+    printf("###################################\n");
+    printf("###################################\n");
+    printf("###################################\n");
 
 
     printf("CARTA 2\n");
@@ -92,53 +97,181 @@ int main(){
     printf("Densidade Populacional: %.2f \n",densidadePOPU1);
     printf("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
+    printf("### Menu do jogo ### \n");
+    printf("Qual vai ser a Disputa \n");
+    printf("1. Populacao \n");
+    printf("2. Area \n");
+    printf("3. PIB \n");
+    printf("4. Densidade Populacional \n");
+    scanf ("%d",&opcaoJogo );
 
-    printf("NESSE JOGO DENSIDADE POPULACIONAL\n");
-    printf("    VAMOS VER QUEM VAI GANHAR \n");
-    printf("CARTA 1 \n");
-    printf("Densidade Populacional: %.2f \n",densidadePOPU);
-    printf("CARTA 2 \n");
-    printf("Densidade Populacional: %.2f \n",densidadePOPU1);
-    if( densidadePOPU < densidadePOPU1){
-        printf("~~~~~~~~~~~~~~~~~\n");
-        printf("  RESULTADO\n");
-        printf("CARTA 1 GANHOU!\n");
-    } else {
-        printf("~~~~~~~~~~~~~~~~~\n");
-        printf("  RESULTADO\n");
-        printf("CARTA 2GANHOU! \n");
+
+    switch (opcaoJogo)
+    {
+    case 1:
+        if (populacao > populacao1)
+        {
+            printf("### CARTA 1 GANHOU ### \n");
+            printf("Populacao carta 1: %d \n", populacao);
+            printf("Populacao carta 2: %d \n", populacao1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf("CARTA 1 \n");
+            printf("Estado: %s \n",estado);
+            printf("Codigo: %d \n",ddd);
+            printf("Capital: %s \n",capital);
+            printf("Populacao: %d \n",populacao);
+            printf("Area: %.2f \n",area);
+            printf("PIB: %.2f bilhoes de reais \n",pib);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT);
+            printf("PIB per capita: %.2f \n",PIBpcarp);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU);
+        }else if (populacao < populacao1)
+        {
+            printf("### CARTA 2 GANHOU ### \n");
+            printf("Populacao carta 1: %d \n", populacao);
+            printf("Populacao carta 2: %d \n", populacao1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf ("CARTA 2 \n");
+            printf("Estado: %s \n",estado1);
+            printf("Codigo: %d \n",ddd1);
+            printf("Capital: %s \n",capital1);
+            printf("Populacao: %d \n",populacao1);
+            printf("Area: %.2f \n",area1);
+            printf("PIB: %.2f bilhoes de reais \n",pib1);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT1);
+            printf("PIB per capita: %.2f \n",PIBpcarp1);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU1);
+            
+        } else {
+            printf("### O JOGO EMPATOU ###");
+        }
+        break;
+
+        case 2:
+        if (area > area1)
+        {
+            printf("### CARTA 1 GANHOU ### \n");
+            printf("Area carta 1: %.2f \n", area);
+            printf("Area carta 2: %.2f \n", area1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf("CARTA 1 \n");
+            printf("Estado: %s \n",estado);
+            printf("Codigo: %d \n",ddd);
+            printf("Capital: %s \n",capital);
+            printf("Populacao: %d \n",populacao);
+            printf("Area: %.2f \n",area);
+            printf("PIB: %.2f bilhoes de reais \n",pib);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT);
+            printf("PIB per capita: %.2f \n",PIBpcarp);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU);
+        }else if (area < area1)
+        {
+            printf("### CARTA 2 GANHOU ### \n");
+            printf("Area carta 1: %.2f \n", area);
+            printf("Area carta 2: %.2f \n", area1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf ("CARTA 2 \n");
+            printf("Estado: %s \n",estado1);
+            printf("Codigo: %d \n",ddd1);
+            printf("Capital: %s \n",capital1);
+            printf("Populacao: %d \n",populacao1);
+            printf("Area: %.2f \n",area1);
+            printf("PIB: %.2f bilhoes de reais \n",pib1);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT1);
+            printf("PIB per capita: %.2f \n",PIBpcarp1);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU1);
+        } else {
+            printf("### O JOGO EMPATOU ###");
+        }
+        break;
+
+        case 3:
+        if (pib > pib1)
+        {
+            printf("### CARTA 1 GANHOU ### \n");
+            printf("PIB carta 1: %.2f \n", pib);
+            printf("PIB carta 2: %.2f \n", pib1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf("CARTA 1 \n");
+            printf("Estado: %s \n",estado);
+            printf("Codigo: %d \n",ddd);
+            printf("Capital: %s \n",capital);
+            printf("Populacao: %d \n",populacao);
+            printf("Area: %.2f \n",area);
+            printf("PIB: %.2f bilhoes de reais \n",pib);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT);
+            printf("PIB per capita: %.2f \n",PIBpcarp);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU);
+        }else if (pib < pib1)
+        {
+            printf("### CARTA 2 GANHOU ### \n");
+            printf("PIB carta 1: %.2f \n", pib);
+            printf("PIB carta 2: %.2f \n", pib1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf ("CARTA 2 \n");
+            printf("Estado: %s \n",estado1);
+            printf("Codigo: %d \n",ddd1);
+            printf("Capital: %s \n",capital1);
+            printf("Populacao: %d \n",populacao1);
+            printf("Area: %.2f \n",area1);
+            printf("PIB: %.2f bilhoes de reais \n",pib1);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT1);
+            printf("PIB per capita: %.2f \n",PIBpcarp1);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU1);
+        } else {
+            printf("### O JOGO EMPATOU ###");
+        }
+        break;
+
+        case 4:
+        if (densidadePOPU < densidadePOPU1)
+        {
+            printf("### CARTA 1 GANHOU ### \n");
+            printf("Densidade Populacional carta 1: %.2f \n", densidadePOPU);
+            printf("Densidade Populacional carta 2: %.2f \n", densidadePOPU1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf("CARTA 1 \n");
+            printf("Estado: %s \n",estado);
+            printf("Codigo: %d \n",ddd);
+            printf("Capital: %s \n",capital);
+            printf("Populacao: %d \n",populacao);
+            printf("Area: %.2f \n",area);
+            printf("PIB: %.2f bilhoes de reais \n",pib);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT);
+            printf("PIB per capita: %.2f \n",PIBpcarp);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU);
+        }else if (densidadePOPU > densidadePOPU1)
+        {
+            printf("### CARTA 2 GANHOU ### \n");
+            printf("Densidade Populacional carta 1: %.2f \n", densidadePOPU);
+            printf("Densidade Populacional carta 2: %.2f \n", densidadePOPU1);
+            printf("#################### \n");
+            printf(" --CARTA VENCEDORA--\n");
+            printf ("CARTA 2 \n");
+            printf("Estado: %s \n",estado1);
+            printf("Codigo: %d \n",ddd1);
+            printf("Capital: %s \n",capital1);
+            printf("Populacao: %d \n",populacao1);
+            printf("Area: %.2f \n",area1);
+            printf("PIB: %.2f bilhoes de reais \n",pib1);
+            printf("Numero de Pontos Turisticos: %d \n",pontosT1);
+            printf("PIB per capita: %.2f \n",PIBpcarp1);
+            printf("Densidade Populacional: %.2f \n",densidadePOPU1);
+        } else {
+            printf("### O JOGO EMPATOU ###");
+        }
+        break;
+    default:
+    printf ("Opcao Invalida! \n");
     }
 
-    printf("!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
-    printf("!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
-    if( densidadePOPU < densidadePOPU1){
-        printf("-__CARTA 1 GANHOU__-\n");
-        printf(" --CARTA VENCEDORA--\n");
-        printf("Estado: %s \n",estado);
-        printf("Codigo: %d \n",ddd);
-        printf("Capital: %s \n",capital);
-        printf("Populacao: %d \n",populacao);
-        printf("Area: %.2f \n",area);
-        printf("PIB: %.2f bilhoes de reais \n",pib);
-        printf("Numero de Pontos Turisticos: %d \n",pontosT);
-        printf("PIB per capita: %.2f \n",PIBpcarp);
-        printf("Densidade Populacional: %.2f \n",densidadePOPU);
-    } else {
-        printf(" -__CARTA 2 GANHOU__- \n");
-        printf(" --CARTA VENCEDORA--\n");
-    printf("Estado: %s \n",estado1);
-    printf("Codigo: %d \n",ddd1);
-    printf("Capital: %s \n",capital1);
-    printf("Populacao: %d \n",populacao1);
-    printf("Area: %.2f \n",area1);
-    printf("PIB: %.2f bilhoes de reais \n",pib1);
-    printf("Numero de Pontos Turisticos: %d \n",pontosT1);
-    printf("PIB per capita: %.2f \n",PIBpcarp1);
-    printf("Densidade Populacional: %.2f \n",densidadePOPU1);
-    }
-
-
-
-    return 0;
+return 0;
 }
