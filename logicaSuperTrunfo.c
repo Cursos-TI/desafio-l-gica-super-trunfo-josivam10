@@ -288,3 +288,5 @@ int main (){
         printf("O SUPER PODER E: %.2f \n", SuperPoder1);
     
     }
+    return 0;
+}
